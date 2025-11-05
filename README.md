@@ -13,11 +13,7 @@ Dự án này tập trung vào việc **nhận diện và phân loại** các bi
 
 Để chạy dự án này, bạn cần cài đặt **Python 3.x** và các thư viện sau.
 
-### 1. Yêu cầu (Prerequisites)
-
-Đảm bảo bạn đã cài đặt `pip` và `venv` (môi trường ảo).
-
-### 2. Cài đặt Thư viện (Dependencies)
+### Cài đặt Thư viện (Dependencies)
 
 Các thư viện chính được sử dụng với phiên bản cụ thể:
 
@@ -31,4 +27,22 @@ Các thư viện chính được sử dụng với phiên bản cụ thể:
 | **matplotlib** | `3.10.7` |
 
 **Dùng lệnh phía dưới** để phiên bản của thư viện chuẩn nhất 
+
 pip install -r requirements.txt
+
+Khởi chạy Ứng dụng (2 Bước Quan Trọng)
+**Bước A: Khởi động API Phân loại (Backend)**
+
+Bạn cần chạy file app.py trước để khởi động dịch vụ dự đoán (API). Giao diện Web sẽ gọi đến dịch vụ này.
+
+Bash/ Terminal
+
+python app.py
+
+API sẽ chạy ở cổng mặc định (ví dụ: http://127.0.0.1:5000).
+
+**Bước B: Khởi chạy Giao diện (Frontend)**
+
+Sau khi API chạy, bạn mở file index.html lên.
+
+Nên dùng: Mở file index.html bằng extension Live Server (trong VS Code) hoặc dùng một Local Web Server.
