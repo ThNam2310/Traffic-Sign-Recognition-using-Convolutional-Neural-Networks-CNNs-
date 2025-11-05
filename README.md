@@ -30,7 +30,8 @@ Các thư viện chính được sử dụng với phiên bản cụ thể:
 
 pip install -r requirements.txt
 
-Khởi chạy Ứng dụng (2 Bước Quan Trọng)
+## 🛠️ Khởi chạy Ứng dụng (2 Bước Quan Trọng)
+
 **Bước A: Khởi động API Phân loại (Backend)**
 
 Bạn cần chạy file app.py trước để khởi động dịch vụ dự đoán (API). Giao diện Web sẽ gọi đến dịch vụ này.
