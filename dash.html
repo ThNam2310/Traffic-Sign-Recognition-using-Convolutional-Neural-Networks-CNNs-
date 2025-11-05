@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Tổng Hợp Biển Báo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dash.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="dash.html">
+                <i class="fas fa-traffic-light"></i> Biển Báo Giao Thông
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dash.html">
+                            <i class="fas fa-th-large"></i> Biển Báo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="detect.html">
+                            <i class="fas fa-camera"></i> Nhận Diện
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+        <div class="row mb-4">
+            <div class="col stat-col">
+                <div class="stat-card h-100">
+                    <div class="stat-icon" style="background: #4bea1b;">
+                        <i class="fas fa-sign"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="totalSigns">222</h3>
+                        <p>Tổng Biển Báo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col stat-col">
+                <div class="stat-card h-100">
+                    <div class="stat-icon" style="background: #EF4444;">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="prohibitionSigns">0</h3>
+                        <p>Biển Báo Cấm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col stat-col">
+                <div class="stat-card h-100">
+                    <div class="stat-icon" style="background:#e2d92d">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="warningSigns">0</h3>
+                        <p>Biển Nguy Hiểm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col stat-col">
+                <div class="stat-card h-100">
+                    <div class="stat-icon" style="background: #4facfe;">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="mandatorySigns">0</h3>
+                        <p>Biển Hiệu Lệnh</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col stat-col">
+                <div class="stat-card h-100">
+                    <div class="stat-icon" style="background:#A78BFA;">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="guideSigns">0</h3>
+                        <p>Biển Chỉ Dẫn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" class="form-control"
+                        placeholder="Tìm kiếm theo mã hoặc tên biển báo...">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <select id="filterType" class="form-select">
+                    <option value="all">Tất cả loại biển báo</option>
+                    <option value="Biển báo cấm">Biển báo cấm</option>
+                    <option value="Biển báo nguy hiểm">Biển báo nguy hiểm</option>
+                    <option value="Biển hiệu lệnh">Biển hiệu lệnh</option>
+                    <option value="Biển chỉ dẫn">Biển chỉ dẫn</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row" id="signsContainer">
+            Signs will be loaded here by JavaScript
+        </div>
+
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <nav>
+                    <ul class="pagination justify-content-center" id="pagination">
+                        Pagination will be generated by JavaScript
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/dash.js"></script>
+</body>
+
+</html>

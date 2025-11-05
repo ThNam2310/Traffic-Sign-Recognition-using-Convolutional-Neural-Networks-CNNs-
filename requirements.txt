@@ -1,0 +1,10 @@
+tensorflow==2.15.0         
+# xử lý ảnh
+Pillow==12.0.0
+opencv-python==4.8.1.78
+
+# vẽ đồ thị
+matplotlib==3.10.7
+
+numpy==1.26.4
+scikit-learn==1.7.2
