@@ -20,7 +20,7 @@ Tập dữ liệu huấn luyện và kiểm thử được lưu trữ tại Goog
 
 ### Hướng dẫn sử dụng:
 1. Truy cập vào link trên và tải toàn bộ thư mục dataset về máy.  
-2. Giải nén (nếu có) và đặt dữ liệu vào thư mục:
+2. Giải nén và đặt dữ liệu vào thư mục:
 
 ---
 
