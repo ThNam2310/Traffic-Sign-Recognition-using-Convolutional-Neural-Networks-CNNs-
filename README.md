@@ -1,11 +1,26 @@
 # 🚦 Traffic Sign Classification using Deep Convolutional Neural Networks (CNN)
+
 ## 💡 Giới Thiệu (Introduction)
 
 Dự án này tập trung vào việc **nhận diện và phân loại** các biển báo giao thông (Traffic Signs Classification) một cách hiệu quả bằng cách sử dụng mô hình học sâu **Convolutional Neural Network (CNN)**.
 
 Để tối ưu hóa hiệu suất và kích thước mô hình cho các ứng dụng thực tế hoặc nhúng (như trong xe tự lái hoặc thiết bị di động), chúng tôi đã lựa chọn sử dụng kiến trúc **MobileNetV2**.
 
-**Mục tiêu chính:** Xây dựng một mô hình nhẹ nhưng có độ chính xác cao trong việc phân loại các nhóm biển báo khác nhau trong tập dữ liệu.
+**🎯 Mục tiêu chính:**  
+Xây dựng một mô hình **nhẹ**, **chính xác cao** và có khả năng **phân loại chính xác các nhóm biển báo giao thông** khác nhau trong tập dữ liệu.
+
+---
+
+## 📂 Dữ Liệu (Dataset)
+
+Tập dữ liệu huấn luyện và kiểm thử được lưu trữ tại Google Drive để thuận tiện cho việc tải xuống.
+
+📎 **Link tải Dataset:**  
+👉 [Google Drive – Traffic Sign Dataset](https://drive.google.com/drive/folders/1Lz8YzKYiN25rlikPjT0_6KR8bOGPPZQ6?usp=sharing)
+
+### Hướng dẫn sử dụng:
+1. Truy cập vào link trên và tải toàn bộ thư mục dataset về máy.  
+2. Giải nén (nếu có) và đặt dữ liệu vào thư mục:
 
 ---
 
@@ -48,3 +63,7 @@ API sẽ chạy ở cổng mặc định (ví dụ: http://127.0.0.1:5000).
 Sau khi API chạy, bạn mở file index.html lên.
 
 Nên dùng: Mở file index.html bằng extension Live Server (trong VS Code) hoặc dùng một Local Web Server.
+
+## 📜 Giấy Phép (License) ##
+
+Dự án này được phát triển cho mục đích học tập và nghiên cứu.
